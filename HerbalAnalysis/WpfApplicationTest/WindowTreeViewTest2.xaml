@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfApplicationTest.WindowTreeViewTest2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplicationTest"
+        xmlns:ts="clr-namespace:ProjectManager;assembly=ProjectManager"
+        mc:Ignorable="d"
+        Title="WindowTreeViewTest2" Height="300" Width="300">
+    <Window.Resources>
+        <HierarchicalDataTemplate DataType="{x:Type ts:TestingSample}" ItemsSource="{Binding PicturesPath}">
+            <TextBlock Text="{Binding PicturesPath.Name}" ToolTip="{Binding Name}" Tag="{Binding}"/>
+        </HierarchicalDataTemplate>
+    </Window.Resources>
+    <Grid>
+        <TreeView Name="TreeView" TreeViewItem.Expanded="item_Expanded" TreeViewItem.Collapsed="item_Collapsed">
+        </TreeView>
+    </Grid>
+</Window>

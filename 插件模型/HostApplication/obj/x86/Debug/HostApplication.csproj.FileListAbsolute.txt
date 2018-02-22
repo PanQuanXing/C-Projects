@@ -1,0 +1,16 @@
+E:\C#\插件模型\HostApplication\bin\Debug\HostApplication.exe
+E:\C#\插件模型\HostApplication\bin\Debug\HostApplication.pdb
+E:\C#\插件模型\HostApplication\obj\x86\Debug\MainWindow.baml
+E:\C#\插件模型\HostApplication\obj\x86\Debug\MainWindow.g.cs
+E:\C#\插件模型\HostApplication\obj\x86\Debug\App.g.cs
+E:\C#\插件模型\HostApplication\obj\x86\Debug\HostApplication_MarkupCompile.cache
+E:\C#\插件模型\HostApplication\obj\x86\Debug\HostApplication.g.resources
+E:\C#\插件模型\HostApplication\obj\x86\Debug\HostApplication.Properties.Resources.resources
+E:\C#\插件模型\HostApplication\obj\x86\Debug\HostApplication.csproj.GenerateResource.Cache
+E:\C#\插件模型\HostApplication\obj\x86\Debug\HostApplication.exe
+E:\C#\插件模型\HostApplication\obj\x86\Debug\HostApplication.pdb
+E:\C#\插件模型\HostApplication\bin\Debug\HostView.dll
+E:\C#\插件模型\HostApplication\bin\Debug\HostView.pdb
+E:\C#\插件模型\Output\HostApplication.exe
+E:\C#\插件模型\Output\HostApplication.pdb
+E:\C#\插件模型\HostApplication\obj\x86\Debug\HostApplication.csprojResolveAssemblyReference.cache

@@ -1,0 +1,11 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/PqxControlLibrary;component/Themes/PqxButton.xaml"/>
+        <ResourceDictionary Source="/PqxControlLibrary;component/Themes/PqxWindow.xaml"/>
+        <ResourceDictionary Source="/PqxControlLibrary;component/Themes/PqxTabItem.xaml"/>
+        <ResourceDictionary Source="/PqxControlLibrary;component/Themes/PqxTabControl.xaml"/>
+        <ResourceDictionary Source="/PqxControlLibrary;component/Themes/PqxComboBox.xaml"/>
+        <ResourceDictionary Source="/PqxControlLibrary;component/Themes/PqxProgressBar.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

@@ -1,0 +1,5 @@
+E:\C#\HerbalAnalysis\ProjectManager\bin\Release\ProjectManager.dll
+E:\C#\HerbalAnalysis\ProjectManager\bin\Release\ProjectManager.pdb
+E:\C#\HerbalAnalysis\ProjectManager\obj\Release\ProjectManager.csprojResolveAssemblyReference.cache
+E:\C#\HerbalAnalysis\ProjectManager\obj\Release\ProjectManager.dll
+E:\C#\HerbalAnalysis\ProjectManager\obj\Release\ProjectManager.pdb

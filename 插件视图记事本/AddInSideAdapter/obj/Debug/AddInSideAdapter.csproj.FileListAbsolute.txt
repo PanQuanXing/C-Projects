@@ -1,0 +1,5 @@
+E:\C#\插件视图记事本\Output\AddInSideAdapters\AddInSideAdapter.dll
+E:\C#\插件视图记事本\Output\AddInSideAdapters\AddInSideAdapter.pdb
+E:\C#\插件视图记事本\AddInSideAdapter\obj\Debug\AddInSideAdapter.csprojResolveAssemblyReference.cache
+E:\C#\插件视图记事本\AddInSideAdapter\obj\Debug\AddInSideAdapter.dll
+E:\C#\插件视图记事本\AddInSideAdapter\obj\Debug\AddInSideAdapter.pdb

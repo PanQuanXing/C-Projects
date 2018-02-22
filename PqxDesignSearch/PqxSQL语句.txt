@@ -1,0 +1,32 @@
+select C.CardNo,C.Name,C.Sex,C.AgeString,C.ContactPhone,A.IllDesc,A.IcdId
+from OuHosInfo as C
+Join OuRecipe as B on B.RecipeNum=C.MzRegNo
+Join ouclincdiag as A on A.MzRegId=B.MzRegID 
+
+
+
+
+
+select C.CardNo,C.Name,C.Sex,C.AgeString,C.ContactPhone,A.IllDesc,A.IcdId
+from OuHosInfo as C
+Join OuRecipe as B on B.RecipeNum=C.MzRegNo
+Join ouclincdiag as A on A.MzRegId=B.MzRegID 
+where IllDesc like 'Î¸Ñ×'
+
+
+select C.CardNo,C.Name,C.Sex,C.AgeString,C.ContactPhone,A.IllDesc,A.IcdId from OuHosInfo as C Join OuRecipe as B on B.RecipeNum=C.MzRegNo Join ouclincdiag as A on A.MzRegId=B.MzRegID where IllDesc like '³¦Î¸Ñ×'
+
+
+ string strCon="select C.CardNo,C.Name,C.Sex,C.AgeString,C.ContactPhone,A.IllDesc,A.IcdId from OuHosInfo as C Join OuRecipe as B on B.RecipeNum=C.MzRegNo Join ouclincdiag as A on A.MzRegId=B.MzRegID where IllDesc like '³¦Î¸Ñ×'";
+            using (SqlConnection sqlCon = new SqlConnection("server=192.168.0.3;user=MyTest;pwd=FUCKyou++;database=XDBHIS"))
+            {
+                using (SqlDataAdapter sqlAdapter = new SqlDataAdapter(strCon, sqlCon))
+                {
+                    sqlAdapter.SelectCommand.CommandType = System.Data.CommandType.Text;
+                    sqlCon.Open();
+                    DataTable dt = new DataTable();
+                    dt.Clear();
+                    sqlAdapter.Fill(dt);
+                    this.gridView1.DataContext = dt;
+                }
+            }

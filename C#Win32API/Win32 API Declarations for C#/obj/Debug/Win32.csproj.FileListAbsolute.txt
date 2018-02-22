@@ -1,0 +1,5 @@
+G:\学习资料\资料\C# 封装 Win32 API\Win32 API Declarations for C#\bin\Debug\Win32.dll
+G:\学习资料\资料\C# 封装 Win32 API\Win32 API Declarations for C#\bin\Debug\Win32.pdb
+G:\学习资料\资料\C# 封装 Win32 API\Win32 API Declarations for C#\obj\Debug\ResolveAssemblyReference.cache
+G:\学习资料\资料\C# 封装 Win32 API\Win32 API Declarations for C#\obj\Debug\Win32.dll
+G:\学习资料\资料\C# 封装 Win32 API\Win32 API Declarations for C#\obj\Debug\Win32.pdb

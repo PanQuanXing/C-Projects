@@ -1,0 +1,4 @@
+E:\C#\插件视图记事本\Output\Contracts\Contract.dll
+E:\C#\插件视图记事本\Output\Contracts\Contract.pdb
+E:\C#\插件视图记事本\Contract\obj\Debug\Contract.dll
+E:\C#\插件视图记事本\Contract\obj\Debug\Contract.pdb

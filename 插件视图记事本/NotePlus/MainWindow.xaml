@@ -1,0 +1,34 @@
+﻿<Window x:Class="NotePlus.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NotePlus"
+        mc:Ignorable="d"
+        Title="NotePlus" Height="350" Width="525" Loaded="Window_Loaded">
+    <Grid>
+        <DockPanel LastChildFill="True">
+            <Menu Name="topMenu" DockPanel.Dock="Top">
+                <MenuItem Header="文件(_F)">
+                    <MenuItem Header="新建(_N)"/>
+                    <MenuItem Header="保存(_S)"></MenuItem>
+                    <Separator/>
+                    <MenuItem Header="退出(_X)"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="编辑"></MenuItem>
+                <MenuItem Header="视图" x:Name="tsm">
+                    <MenuItem.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel HorizontalAlignment="Stretch" MouseUp="StackPanel_MouseUp">
+                                    <TextBlock Text="{Binding Path=Name}" FontWeight="Bold"/>
+                                    <TextBlock Text="{Binding Path=Publisher}"/>
+                                </StackPanel>
+                            </DataTemplate>
+                    </MenuItem.ItemTemplate>
+                </MenuItem>
+                <MenuItem Header="帮助"></MenuItem>
+            </Menu>
+            <TextBox Name="textBox" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Visible" SnapsToDevicePixels="True" Height="auto" DockPanel.Dock="Bottom" BorderThickness="0"/>
+        </DockPanel>
+    </Grid>
+</Window>

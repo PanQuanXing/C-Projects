@@ -1,0 +1,11 @@
+E:\C#\插件模型\AddInSideAdapter\bin\Debug\AddInSideAdapter.dll
+E:\C#\插件模型\AddInSideAdapter\bin\Debug\AddInSideAdapter.pdb
+E:\C#\插件模型\AddInSideAdapter\bin\Debug\AddInView.dll
+E:\C#\插件模型\AddInSideAdapter\bin\Debug\Contract.dll
+E:\C#\插件模型\AddInSideAdapter\bin\Debug\AddInView.pdb
+E:\C#\插件模型\AddInSideAdapter\bin\Debug\Contract.pdb
+E:\C#\插件模型\AddInSideAdapter\obj\Debug\AddInSideAdapter.csprojResolveAssemblyReference.cache
+E:\C#\插件模型\AddInSideAdapter\obj\Debug\AddInSideAdapter.dll
+E:\C#\插件模型\AddInSideAdapter\obj\Debug\AddInSideAdapter.pdb
+E:\C#\插件模型\Output\AddInSideAdapters\AddInSideAdapter.dll
+E:\C#\插件模型\Output\AddInSideAdapters\AddInSideAdapter.pdb

@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HerbalAnalysis", "HerbalAnalysis\HerbalAnalysis.csproj", "{33F42BD3-2148-4BBC-9774-A223F9210E63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LanguageLocalization", "LanguageLocalization\LanguageLocalization.csproj", "{3419C93A-BB62-496E-BE31-185DBA64BA36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectManager", "ProjectManager\ProjectManager.csproj", "{1ABDB5E5-355F-4A49-AFCB-4407DB844F7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApplicationTest", "WpfApplicationTest\WpfApplicationTest.csproj", "{95E061CC-4B65-4575-AFFA-17A48C4ADA40}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33F42BD3-2148-4BBC-9774-A223F9210E63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33F42BD3-2148-4BBC-9774-A223F9210E63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33F42BD3-2148-4BBC-9774-A223F9210E63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33F42BD3-2148-4BBC-9774-A223F9210E63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3419C93A-BB62-496E-BE31-185DBA64BA36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3419C93A-BB62-496E-BE31-185DBA64BA36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3419C93A-BB62-496E-BE31-185DBA64BA36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3419C93A-BB62-496E-BE31-185DBA64BA36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1ABDB5E5-355F-4A49-AFCB-4407DB844F7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ABDB5E5-355F-4A49-AFCB-4407DB844F7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ABDB5E5-355F-4A49-AFCB-4407DB844F7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ABDB5E5-355F-4A49-AFCB-4407DB844F7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95E061CC-4B65-4575-AFFA-17A48C4ADA40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95E061CC-4B65-4575-AFFA-17A48C4ADA40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95E061CC-4B65-4575-AFFA-17A48C4ADA40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95E061CC-4B65-4575-AFFA-17A48C4ADA40}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

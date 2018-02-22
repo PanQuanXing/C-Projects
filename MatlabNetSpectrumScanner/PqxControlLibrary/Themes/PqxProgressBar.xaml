@@ -1,0 +1,54 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:pqx="clr-namespace:PqxControlLibrary">
+    <Style x:Key="{x:Type pqx:PqxProgressBar}" TargetType="{x:Type pqx:PqxProgressBar}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type pqx:PqxProgressBar}">
+                    <Grid>
+                        <!--背景框-->
+                        <Rectangle Margin="0" VerticalAlignment="Stretch" Height="Auto" StrokeThickness="1" Stroke="{Binding BackgroundStroke,RelativeSource={RelativeSource TemplatedParent}}" RadiusX="{Binding TheRadiusX,RelativeSource={RelativeSource TemplatedParent}}" RadiusY="{Binding TheRadiusY,RelativeSource={RelativeSource TemplatedParent}}" Fill="{Binding BackgroundBrush,RelativeSource={RelativeSource TemplatedParent}}">
+                        </Rectangle>
+                        <!--进度低槽     不要改这个DockPanel的名字-->
+                        <DockPanel x:Name="PART_Track" Margin="1" LastChildFill="false">
+                            <!--进度填充条     不要改这个Rec的名字-->
+                            <Rectangle  x:Name="PART_Indicator" RadiusX="{Binding TheRadiusX,RelativeSource={RelativeSource TemplatedParent}}" RadiusY="{Binding TheRadiusY,RelativeSource={RelativeSource TemplatedParent}}" Fill="{Binding TrackBrush,RelativeSource={RelativeSource TemplatedParent}}">
+                            </Rectangle>
+                        </DockPanel>
+                        <!--边缘的一像素高光-->
+                        <Rectangle Margin="1" Height="Auto" Stroke="White" Opacity="0.25" RadiusX="{Binding TheRadiusX,RelativeSource={RelativeSource TemplatedParent}}" RadiusY="{Binding TheRadiusY,RelativeSource={RelativeSource TemplatedParent}}"/>
+                        <TextBlock Text="{Binding TextContent,RelativeSource={RelativeSource TemplatedParent}}" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{Binding TextForeColor,RelativeSource={RelativeSource TemplatedParent}}" TextAlignment="Center" FontSize="{Binding TextFontSize,RelativeSource={RelativeSource TemplatedParent}}"></TextBlock>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <!--垂直方向的进度条-->
+        <Style.Triggers>
+            <Trigger Property="Orientation" Value="Vertical">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type ProgressBar}">
+                            <Grid>
+                                <!--背景框-->
+                                <Rectangle Margin="0" VerticalAlignment="Stretch" Height="Auto" Stroke="{Binding BackgroundStroke,RelativeSource={RelativeSource TemplatedParent}}" RadiusX="{Binding TheRadiusX,RelativeSource={RelativeSource TemplatedParent}}" RadiusY="{Binding TheRadiusY,RelativeSource={RelativeSource TemplatedParent}}" Fill="{Binding BackgroundBrush,RelativeSource={RelativeSource TemplatedParent}}">
+                                    </Rectangle>
+                                <DockPanel x:Name="PART_Track" Margin="1,0,1,1" LastChildFill="false">
+                                    <Decorator x:Name="PART_Indicator" DockPanel.Dock="Bottom">
+                                        <Rectangle Fill="{Binding TrackBrush,RelativeSource={RelativeSource TemplatedParent}}">
+                                            <Rectangle.LayoutTransform>
+                                                <RotateTransform Angle="-90"/>
+                                            </Rectangle.LayoutTransform>
+                                        </Rectangle>
+                                    </Decorator>
+                                </DockPanel>
+                                <!--边缘的一像素高光-->
+                                <Rectangle Margin="1" Height="Auto" Stroke="White" Opacity="0.25" RadiusX="{Binding TheRadiusX,RelativeSource={RelativeSource TemplatedParent}}" RadiusY="{Binding TheRadiusY,RelativeSource={RelativeSource TemplatedParent}}"/>
+                                <TextBlock Text="{Binding TextContent,RelativeSource={RelativeSource TemplatedParent}}" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{Binding TextForeColor,RelativeSource={RelativeSource TemplatedParent}}" TextAlignment="Center" FontSize="{Binding TextFontSize,RelativeSource={RelativeSource TemplatedParent}}"></TextBlock>
+                            </Grid>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+</ResourceDictionary>

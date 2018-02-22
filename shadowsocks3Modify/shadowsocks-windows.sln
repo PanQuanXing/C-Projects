@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PanQuanXingSS", "shadowsocks-csharp\PanQuanXingSS.csproj", "{8C02D2F7-7CDB-4D55-9F25-CD03EF4AA062}"
+EndProject
+Project("{6141683F-8A12-4E36-9623-2EB02B2C2303}") = "BuddhaJumpingOvertheWall", "BuddhaJumpingOvertheWall\BuddhaJumpingOvertheWall.isproj", "{487EEF6C-B1F5-400E-B6AD-5661C5DE8251}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8C02D2F7-7CDB-4D55-9F25-CD03EF4AA062} = {8C02D2F7-7CDB-4D55-9F25-CD03EF4AA062}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CD_ROM|x86 = CD_ROM|x86
+		Debug|x86 = Debug|x86
+		DVD-5|x86 = DVD-5|x86
+		Release|x86 = Release|x86
+		SingleImage|x86 = SingleImage|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C02D2F7-7CDB-4D55-9F25-CD03EF4AA062}.CD_ROM|x86.ActiveCfg = Release|x86
+		{8C02D2F7-7CDB-4D55-9F25-CD03EF4AA062}.CD_ROM|x86.Build.0 = Release|x86
+		{8C02D2F7-7CDB-4D55-9F25-CD03EF4AA062}.Debug|x86.ActiveCfg = Debug|x86
+		{8C02D2F7-7CDB-4D55-9F25-CD03EF4AA062}.Debug|x86.Build.0 = Debug|x86
+		{8C02D2F7-7CDB-4D55-9F25-CD03EF4AA062}.Debug|x86.Deploy.0 = Debug|x86
+		{8C02D2F7-7CDB-4D55-9F25-CD03EF4AA062}.DVD-5|x86.ActiveCfg = Debug|x86
+		{8C02D2F7-7CDB-4D55-9F25-CD03EF4AA062}.DVD-5|x86.Build.0 = Debug|x86
+		{8C02D2F7-7CDB-4D55-9F25-CD03EF4AA062}.Release|x86.ActiveCfg = Release|x86
+		{8C02D2F7-7CDB-4D55-9F25-CD03EF4AA062}.Release|x86.Build.0 = Release|x86
+		{8C02D2F7-7CDB-4D55-9F25-CD03EF4AA062}.SingleImage|x86.ActiveCfg = Release|x86
+		{8C02D2F7-7CDB-4D55-9F25-CD03EF4AA062}.SingleImage|x86.Build.0 = Release|x86
+		{487EEF6C-B1F5-400E-B6AD-5661C5DE8251}.CD_ROM|x86.ActiveCfg = CD_ROM
+		{487EEF6C-B1F5-400E-B6AD-5661C5DE8251}.CD_ROM|x86.Build.0 = CD_ROM
+		{487EEF6C-B1F5-400E-B6AD-5661C5DE8251}.Debug|x86.ActiveCfg = DVD-5
+		{487EEF6C-B1F5-400E-B6AD-5661C5DE8251}.Debug|x86.Build.0 = DVD-5
+		{487EEF6C-B1F5-400E-B6AD-5661C5DE8251}.DVD-5|x86.ActiveCfg = DVD-5
+		{487EEF6C-B1F5-400E-B6AD-5661C5DE8251}.DVD-5|x86.Build.0 = DVD-5
+		{487EEF6C-B1F5-400E-B6AD-5661C5DE8251}.Release|x86.ActiveCfg = SingleImage
+		{487EEF6C-B1F5-400E-B6AD-5661C5DE8251}.Release|x86.Build.0 = SingleImage
+		{487EEF6C-B1F5-400E-B6AD-5661C5DE8251}.SingleImage|x86.ActiveCfg = SingleImage
+		{487EEF6C-B1F5-400E-B6AD-5661C5DE8251}.SingleImage|x86.Build.0 = SingleImage
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

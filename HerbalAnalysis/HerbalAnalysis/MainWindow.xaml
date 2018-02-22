@@ -1,0 +1,138 @@
+﻿<Window x:Class="HerbalAnalysis.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:avalon="http://schemas.xceed.com/wpf/xaml/avalondock"
+        xmlns:ts="clr-namespace:ProjectManager;assembly=ProjectManager"
+        Title="MainWindow" Height="350" Width="525"
+        WindowStartupLocation="Manual" WindowStyle="SingleBorderWindow" Loaded="Window_Loaded" Closing="Window_Closing" Activated="Window_Activated" WindowState="Maximized" BorderBrush="#FF444444">
+    <Window.CommandBindings>
+        <CommandBinding Command="ApplicationCommands.New" Executed="NewPqxProjCommand"/>
+        <CommandBinding Command="ApplicationCommands.New" Executed="OpenPqxProjCommand"/>
+    </Window.CommandBindings>
+    <Grid UseLayoutRounding="True">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Menu Name="mainMenu" Grid.Row="0" FontSize="14" Background="#FFEEF5FD">
+            <MenuItem Name="menuItemFile" Header="文件(_F)" MouseEnter="menuItemFile_MouseEnter">
+                <MenuItem Name="menuItemNew" Command="New"/>
+                <MenuItem Name="menuItemOpen" Command="Open"/>
+                <Separator/>
+                <MenuItem Name="menuItemAdd"/>
+                <Separator/>
+                <MenuItem Name="menuItemClose"/>
+                <Separator/>
+                <MenuItem Name="menuItemRecentProject">
+                    <MenuItem.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding}" MouseUp="TextBlock_MouseUp"/>
+                        </DataTemplate>
+                    </MenuItem.ItemTemplate>
+                </MenuItem>
+                <Separator/>
+                <MenuItem Name="menuItemExit"/>
+            </MenuItem>
+            <MenuItem Name="menuItemEdit" Header="编辑(_E)">
+                <MenuItem Name="menuItemUndo"/>
+                <MenuItem Name="menuItemCut"/>
+                <MenuItem Name="menuItemCopy"/>
+                <MenuItem Name="menuItemPaste"/>
+                <Separator/>
+                <MenuItem Name="menuItemDelete"/>
+            </MenuItem>
+            <MenuItem Name="menuItemView" Header="视图(_V)">
+                <MenuItem Name="menuItemProjResManager"/>
+                <MenuItem Name="menuItemProjAttrPage"/>
+            </MenuItem>
+            <MenuItem Name="menuItemTools" Header="工具(_T)">
+                <!--一些分析方法，eg:主成分分析-->
+            </MenuItem>
+            <MenuItem Name="menuItemAbout" Header="关于(_A)" Click="menuItemHelp_Click">
+
+            </MenuItem>
+        </Menu>
+        <Grid UseLayoutRounding="True" Grid.Row="1">
+
+            <avalon:DockingManager>
+                <avalon:DockingManager.Theme>
+                    <avalon:ExpressionDarkTheme/>
+                </avalon:DockingManager.Theme>
+                <avalon:LayoutRoot>
+                    <avalon:LayoutPanel x:Name="Panel">
+                        <avalon:LayoutAnchorablePaneGroup x:Name="RightAnchorableGroup" Orientation="Vertical">
+                            <avalon:LayoutAnchorablePane x:Name="RightPane" >
+                                <avalon:LayoutAnchorable Title="导入图像" ContentId="Property">
+                                    <Grid Margin="8">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions >
+                                        <TextBox Name="NodeNameTextBox" Grid.Row="0" Grid.Column="0" Margin="5 5 5 0" VerticalContentAlignment="Center" Height="{Binding ActualHeight,ElementName=WaveLengthStartTB}" ToolTip="给检测样品命名或使用数字编号可以自增" TextChanged="NodeNameTextBox_TextChanged"/>
+                                        <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
+                                            <Label Margin="5" Foreground="White">开始波长：</Label>
+                                            <TextBox x:Name="WaveLengthStartTB" Margin="5" Width="60" VerticalContentAlignment="Center" ToolTip="开始波长" DataObject.Pasting="WaveLengthTB_Pasting" PreviewKeyDown="WaveLengthTB_PreviewKeyDown"/>
+                                            <Label Foreground="White" VerticalContentAlignment="Center" Content="nm             步长："/>
+                                            <TextBox Name="WaveLengthSpaceTB" Margin="5" Width="60" VerticalContentAlignment="Center" ToolTip="结束波长" DataObject.Pasting="WaveLengthTB_Pasting" PreviewKeyDown="WaveLengthTB_PreviewKeyDown"/>
+                                            <Label Margin="5" Foreground="White">nm/图片</Label>
+                                        </StackPanel>
+                                        <Button Name="AppendButton" Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" Padding="5" Content="添加>>" FontSize="14" Margin="0 5" Click="AppendButton_Click"/>
+                                        <TextBlock Name="TipsTextBlock" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center" Foreground="Red"/>
+                                        <StackPanel Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2">
+                                            <CheckBox Name="IsSortTimeCheckBox" Content="根据导入的图像文件创建时间排序(否则根据图像文件的名称进行排序)" Foreground="White"/>
+                                            <CheckBox Name="IsReverseCheckBox" Content="在以上情况下，对图像文件倒序" Foreground="White"/>
+                                        </StackPanel>
+                                        <TreeView Name="DirTreeView" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Margin="5">
+                                            <HierarchicalDataTemplate DataType="{x:Type ts:TestingSample}" ItemsSource="{Binding PicturesPath}">
+                                                <TextBlock Text="{Binding PicturesPath.Name}" ToolTip="{Binding PicturesPath.FullName}" Tag="{Binding}"/>
+                                            </HierarchicalDataTemplate>
+                                        </TreeView>
+                                    </Grid>
+                                </avalon:LayoutAnchorable>
+                            </avalon:LayoutAnchorablePane>
+                        </avalon:LayoutAnchorablePaneGroup>
+                    </avalon:LayoutPanel>
+
+                    <avalon:LayoutRoot.LeftSide>
+                        <avalon:LayoutAnchorSide>
+                            <avalon:LayoutAnchorGroup x:Name="LeftGroup">
+
+                            </avalon:LayoutAnchorGroup>
+                        </avalon:LayoutAnchorSide>
+                    </avalon:LayoutRoot.LeftSide>
+
+                    <avalon:LayoutRoot.RightSide>
+                        <avalon:LayoutAnchorSide>
+                            <avalon:LayoutAnchorGroup x:Name="RightGroup">
+
+                            </avalon:LayoutAnchorGroup>
+                        </avalon:LayoutAnchorSide>
+                    </avalon:LayoutRoot.RightSide>
+
+                    <avalon:LayoutRoot.TopSide>
+                        <avalon:LayoutAnchorSide>
+                            <avalon:LayoutAnchorGroup x:Name="TopGroup">
+
+                            </avalon:LayoutAnchorGroup>
+                        </avalon:LayoutAnchorSide>
+                    </avalon:LayoutRoot.TopSide>
+
+                    <avalon:LayoutRoot.BottomSide>
+                        <avalon:LayoutAnchorSide>
+                            <avalon:LayoutAnchorGroup x:Name="BottomGroup">
+                            </avalon:LayoutAnchorGroup>
+                        </avalon:LayoutAnchorSide>
+                    </avalon:LayoutRoot.BottomSide>
+                </avalon:LayoutRoot>
+            </avalon:DockingManager>
+            
+        </Grid>
+    </Grid>
+</Window>

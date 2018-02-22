@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotePlus", "NotePlus\NotePlus.csproj", "{ABD4570C-CFF0-4079-9A97-0649B28BDA30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "Contract\Contracts.csproj", "{FB7DE412-34A0-46DC-A797-BABB40A214FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddInView", "AddInView\AddInView.csproj", "{C36F1A4C-69A2-4787-A992-B21D60B3769D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyUpperProcessorAddIn", "FadeImageAddIn\MyUpperProcessorAddIn.csproj", "{EA912EF1-0A86-4C4C-901F-2B53CB57C342}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddInSideAdapter", "AddInSideAdapter\AddInSideAdapter.csproj", "{86C367C6-02DF-4870-83BC-F53830A6F9AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostView", "HostView\HostView.csproj", "{EFF3B3B3-D780-4793-85DC-FC85264DCFBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostSideAdapter", "HostSideAdapter\HostSideAdapter.csproj", "{A0B16786-B8F2-4411-A2E7-7AE68A520FC7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABD4570C-CFF0-4079-9A97-0649B28BDA30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABD4570C-CFF0-4079-9A97-0649B28BDA30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABD4570C-CFF0-4079-9A97-0649B28BDA30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABD4570C-CFF0-4079-9A97-0649B28BDA30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB7DE412-34A0-46DC-A797-BABB40A214FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB7DE412-34A0-46DC-A797-BABB40A214FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB7DE412-34A0-46DC-A797-BABB40A214FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB7DE412-34A0-46DC-A797-BABB40A214FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C36F1A4C-69A2-4787-A992-B21D60B3769D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C36F1A4C-69A2-4787-A992-B21D60B3769D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C36F1A4C-69A2-4787-A992-B21D60B3769D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C36F1A4C-69A2-4787-A992-B21D60B3769D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA912EF1-0A86-4C4C-901F-2B53CB57C342}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA912EF1-0A86-4C4C-901F-2B53CB57C342}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA912EF1-0A86-4C4C-901F-2B53CB57C342}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA912EF1-0A86-4C4C-901F-2B53CB57C342}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86C367C6-02DF-4870-83BC-F53830A6F9AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86C367C6-02DF-4870-83BC-F53830A6F9AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86C367C6-02DF-4870-83BC-F53830A6F9AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86C367C6-02DF-4870-83BC-F53830A6F9AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFF3B3B3-D780-4793-85DC-FC85264DCFBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFF3B3B3-D780-4793-85DC-FC85264DCFBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFF3B3B3-D780-4793-85DC-FC85264DCFBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFF3B3B3-D780-4793-85DC-FC85264DCFBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0B16786-B8F2-4411-A2E7-7AE68A520FC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0B16786-B8F2-4411-A2E7-7AE68A520FC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0B16786-B8F2-4411-A2E7-7AE68A520FC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0B16786-B8F2-4411-A2E7-7AE68A520FC7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

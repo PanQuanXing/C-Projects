@@ -1,0 +1,7 @@
+E:\C#\插件模型\Contract\bin\Debug\Contract.dll
+E:\C#\插件模型\Contract\bin\Debug\Contract.pdb
+E:\C#\插件模型\Contract\obj\Debug\Contract.dll
+E:\C#\插件模型\Contract\obj\Debug\Contract.pdb
+E:\C#\插件模型\Output\Contracts\Contract.dll
+E:\C#\插件模型\Output\Contracts\Contract.pdb
+E:\C#\插件模型\Contract\obj\Debug\Contract.csprojResolveAssemblyReference.cache

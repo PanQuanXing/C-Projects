@@ -1,0 +1,15 @@
+E:\C#\插件视图记事本\NotePlus\bin\Debug\NotePlus.exe
+E:\C#\插件视图记事本\NotePlus\bin\Debug\NotePlus.pdb
+E:\C#\插件视图记事本\NotePlus\obj\Debug\NotePlus.csprojResolveAssemblyReference.cache
+E:\C#\插件视图记事本\NotePlus\obj\Debug\MainWindow.g.cs
+E:\C#\插件视图记事本\NotePlus\obj\Debug\App.g.cs
+E:\C#\插件视图记事本\NotePlus\obj\Debug\NotePlus_MarkupCompile.cache
+E:\C#\插件视图记事本\NotePlus\obj\Debug\NotePlus_MarkupCompile.lref
+E:\C#\插件视图记事本\NotePlus\obj\Debug\MainWindow.baml
+E:\C#\插件视图记事本\NotePlus\obj\Debug\NotePlus.g.resources
+E:\C#\插件视图记事本\NotePlus\obj\Debug\NotePlus.Properties.Resources.resources
+E:\C#\插件视图记事本\NotePlus\obj\Debug\NotePlus.csproj.GenerateResource.Cache
+E:\C#\插件视图记事本\NotePlus\obj\Debug\NotePlus.exe
+E:\C#\插件视图记事本\NotePlus\obj\Debug\NotePlus.pdb
+E:\C#\插件视图记事本\Output\NotePlus.exe
+E:\C#\插件视图记事本\Output\NotePlus.pdb

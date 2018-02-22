@@ -1,0 +1,4 @@
+E:\C#\插件视图记事本\Output\HostView.dll
+E:\C#\插件视图记事本\Output\HostView.pdb
+E:\C#\插件视图记事本\HostView\obj\Debug\HostView.dll
+E:\C#\插件视图记事本\HostView\obj\Debug\HostView.pdb

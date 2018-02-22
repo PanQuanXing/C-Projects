@@ -1,0 +1,5 @@
+E:\C#\插件模型\NegativeImageAddIn\obj\Debug\NegativeImageAddIn.csprojResolveAssemblyReference.cache
+E:\C#\插件模型\Output\AddIns\NegativeImageAddIn\NegativeImageAddIn.dll
+E:\C#\插件模型\Output\AddIns\NegativeImageAddIn\NegativeImageAddIn.pdb
+E:\C#\插件模型\NegativeImageAddIn\obj\Debug\NegativeImageAddIn.dll
+E:\C#\插件模型\NegativeImageAddIn\obj\Debug\NegativeImageAddIn.pdb

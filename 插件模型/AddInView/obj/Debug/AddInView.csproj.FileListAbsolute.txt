@@ -1,0 +1,6 @@
+E:\C#\插件模型\AddInView\bin\Debug\AddInView.dll
+E:\C#\插件模型\AddInView\bin\Debug\AddInView.pdb
+E:\C#\插件模型\AddInView\obj\Debug\AddInView.dll
+E:\C#\插件模型\AddInView\obj\Debug\AddInView.pdb
+E:\C#\插件模型\Output\AddInViews\AddInView.dll
+E:\C#\插件模型\Output\AddInViews\AddInView.pdb

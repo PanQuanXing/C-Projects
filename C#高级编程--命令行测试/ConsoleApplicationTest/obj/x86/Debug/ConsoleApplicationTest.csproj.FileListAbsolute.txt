@@ -1,0 +1,10 @@
+E:\C#\ConsoleApplicationTest\ConsoleApplicationTest\bin\Debug\ConsoleApplicationTest.exe.config
+E:\C#\ConsoleApplicationTest\ConsoleApplicationTest\bin\Debug\ConsoleApplicationTest.exe
+E:\C#\ConsoleApplicationTest\ConsoleApplicationTest\bin\Debug\ConsoleApplicationTest.pdb
+E:\C#\ConsoleApplicationTest\ConsoleApplicationTest\obj\x86\Debug\ConsoleApplicationTest.exe
+E:\C#\ConsoleApplicationTest\ConsoleApplicationTest\obj\x86\Debug\ConsoleApplicationTest.pdb
+E:\C#\C#高级编程--命令行测试\ConsoleApplicationTest\bin\Debug\ConsoleApplicationTest.exe.config
+E:\C#\C#高级编程--命令行测试\ConsoleApplicationTest\obj\x86\Debug\ConsoleApplicationTest.exe
+E:\C#\C#高级编程--命令行测试\ConsoleApplicationTest\obj\x86\Debug\ConsoleApplicationTest.pdb
+E:\C#\C#高级编程--命令行测试\ConsoleApplicationTest\bin\Debug\ConsoleApplicationTest.exe
+E:\C#\C#高级编程--命令行测试\ConsoleApplicationTest\bin\Debug\ConsoleApplicationTest.pdb

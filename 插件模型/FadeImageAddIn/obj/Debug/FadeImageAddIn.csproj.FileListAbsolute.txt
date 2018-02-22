@@ -1,0 +1,9 @@
+E:\C#\插件模型\FadeImageAddIn\bin\Debug\FadeImageAddIn.dll
+E:\C#\插件模型\FadeImageAddIn\bin\Debug\FadeImageAddIn.pdb
+E:\C#\插件模型\FadeImageAddIn\bin\Debug\AddInView.dll
+E:\C#\插件模型\FadeImageAddIn\bin\Debug\AddInView.pdb
+E:\C#\插件模型\FadeImageAddIn\obj\Debug\FadeImageAddIn.csprojResolveAssemblyReference.cache
+E:\C#\插件模型\FadeImageAddIn\obj\Debug\FadeImageAddIn.dll
+E:\C#\插件模型\FadeImageAddIn\obj\Debug\FadeImageAddIn.pdb
+E:\C#\插件模型\Output\AddIns\FadeImageAddIn\FadeImageAddIn.dll
+E:\C#\插件模型\Output\AddIns\FadeImageAddIn\FadeImageAddIn.pdb

@@ -1,0 +1,8 @@
+E:\C#\HerbalAnalysis\LanguageLocalization\obj\Debug\LanguageLocalization.csprojResolveAssemblyReference.cache
+E:\C#\HerbalAnalysis\LanguageLocalization\bin\Debug\LanguageLocalization.dll
+E:\C#\HerbalAnalysis\LanguageLocalization\bin\Debug\LanguageLocalization.pdb
+E:\C#\HerbalAnalysis\LanguageLocalization\obj\Debug\LanguageLocalization.dll
+E:\C#\HerbalAnalysis\LanguageLocalization\obj\Debug\LanguageLocalization.pdb
+E:\C#\HerbalAnalysis\LanguageLocalization\bin\Debug\Resources\programString.data
+E:\C#\HerbalAnalysis\LanguageLocalization\obj\Debug\LanguageLocalization.LocalResources.resources
+E:\C#\HerbalAnalysis\LanguageLocalization\obj\Debug\LanguageLocalization.csproj.GenerateResource.Cache

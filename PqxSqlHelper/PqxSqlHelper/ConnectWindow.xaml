@@ -1,0 +1,36 @@
+﻿<Window x:Class="PqxSqlHelper.ConnectWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:loacal="clr-namespace:PqxSqlHelper"
+        Title="访问数据库设置" Height="200" Width="300" WindowStyle="ToolWindow" WindowStartupLocation="CenterScreen" ShowInTaskbar="False" Topmost="True" Closed="Window_Closed">
+    <Window.Resources>
+        <loacal:IsCheckedConverter x:Key="isCheckedConverter"/>
+    </Window.Resources>
+    <Grid Name="mainGrid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+       
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="服务器IP:" Margin="2" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <TextBox Name="ipTextBox" Grid.Row="0" Grid.Column="1" Margin="2" BorderBrush="Gray" IsReadOnly="{Binding ElementName=remCheckBox,Path=IsChecked,Mode=OneWay}" TextChanged="ipTextBox_TextChanged"/>
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="SQL用户名：" Margin="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Name="userNameTextBox" Grid.Row="1" Grid.Column="1" Margin="2" BorderBrush="Gray" IsReadOnly="{Binding ElementName=remCheckBox,Path=IsChecked,Mode=OneWay}"/>
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="SQL用户密码：" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <PasswordBox Name="passwordBox" Grid.Row="2" Grid.Column="1" Margin="2" BorderBrush="Gray" IsEnabled="{Binding ElementName=remCheckBox,Path=IsChecked,Mode=OneWay,Converter={StaticResource isCheckedConverter}}"/>
+        <TextBlock Grid.Row="3" Grid.Column="0" Text="数据库名：" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Name="dbNameTextBox" Grid.Row="3" Grid.Column="1" Margin="2" BorderBrush="Gray" IsReadOnly="{Binding ElementName=remCheckBox,Path=IsChecked,Mode=OneWay}"/>
+        <CheckBox Name="remCheckBox" Grid.Row="4" Grid.Column="0" Content="锁定" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <Button Name="submitButton" Grid.Row="4" Grid.Column="1" Content="确定" Margin="5" Click="submitButton_Click"/>
+        <TextBlock Name="tipsTextBlock" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Foreground="Red" HorizontalAlignment="Center"/>
+    </Grid>
+</Window>

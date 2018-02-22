@@ -1,0 +1,11 @@
+E:\C#\插件模型\HostSideAdapter\obj\Debug\HostSideAdapter.csprojResolveAssemblyReference.cache
+E:\C#\插件模型\HostSideAdapter\bin\Debug\HostSideAdapter.dll
+E:\C#\插件模型\HostSideAdapter\bin\Debug\HostSideAdapter.pdb
+E:\C#\插件模型\HostSideAdapter\bin\Debug\Contract.dll
+E:\C#\插件模型\HostSideAdapter\bin\Debug\HostView.dll
+E:\C#\插件模型\HostSideAdapter\bin\Debug\Contract.pdb
+E:\C#\插件模型\HostSideAdapter\bin\Debug\HostView.pdb
+E:\C#\插件模型\HostSideAdapter\obj\Debug\HostSideAdapter.dll
+E:\C#\插件模型\HostSideAdapter\obj\Debug\HostSideAdapter.pdb
+E:\C#\插件模型\Output\HostSideAdapters\HostSideAdapter.dll
+E:\C#\插件模型\Output\HostSideAdapters\HostSideAdapter.pdb

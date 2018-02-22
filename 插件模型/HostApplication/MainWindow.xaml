@@ -1,0 +1,31 @@
+﻿<Window x:Class="HostApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MAF插件模型应用程序" Height="350" Width="525" Loaded="Window_Loaded">
+    <Grid Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="auto"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <ListBox Name="addInList" Margin="5" SelectionChanged="addInList_SelectionChanged">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Margin="5 5 0 8" HorizontalAlignment="Stretch">
+                        <TextBlock Text="{Binding Path=Name}" FontWeight="Bold"></TextBlock>
+                        <TextBlock Text="{Binding Path=Publisher}"></TextBlock>
+                        <TextBlock Text="{Binding Path=Description}" FontSize="10" FontStyle="Italic"></TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Button Grid.Column="1" Margin="5 25 0 0" Padding="5" VerticalAlignment="Top" Name="cmdProcessorImage" IsEnabled="False" Click="cmdProcessorImage_Click">确定</Button>
+        <Button Grid.Row="1" Grid.Column="1" Margin="5 25 0 0" Padding="5" VerticalAlignment="Top" Name="openBtn" xml:space="preserve" Click="openBtn_Click">打开&#x0a;图像</Button>
+        <Button Grid.Row="1" Grid.Column="1" Margin="5 85 0 0" Padding="5" VerticalAlignment="Top" Name="saveBtn" Click="saveBtn_Click">保存图像</Button>
+        <Image Grid.Row="1" Name="myImage" VerticalAlignment="Top"></Image>
+        <ProgressBar Grid.Row="1" VerticalAlignment="Bottom" Height="15" Name="myProgressBar"></ProgressBar>
+    </Grid>
+</Window>

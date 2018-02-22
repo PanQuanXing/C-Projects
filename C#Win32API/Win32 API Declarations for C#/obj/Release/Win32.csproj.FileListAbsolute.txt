@@ -1,0 +1,5 @@
+G:\学习资料\资料\C# 封装 Win32 API\Win32 API Declarations for C#\bin\Release\Win32.dll
+G:\学习资料\资料\C# 封装 Win32 API\Win32 API Declarations for C#\obj\Release\ResolveAssemblyReference.cache
+G:\学习资料\资料\C# 封装 Win32 API\Win32 API Declarations for C#\obj\Release\Win32.dll
+E:\C#\C#封装好的Win32API\Win32 API Declarations for C#\bin\Release\Win32.dll
+E:\C#\C#封装好的Win32API\Win32 API Declarations for C#\obj\Release\Win32.dll

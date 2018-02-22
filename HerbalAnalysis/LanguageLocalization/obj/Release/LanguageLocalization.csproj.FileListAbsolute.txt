@@ -1,0 +1,7 @@
+E:\C#\HerbalAnalysis\LanguageLocalization\bin\Release\Resources\programString.data
+E:\C#\HerbalAnalysis\LanguageLocalization\bin\Release\LanguageLocalization.dll
+E:\C#\HerbalAnalysis\LanguageLocalization\bin\Release\LanguageLocalization.pdb
+E:\C#\HerbalAnalysis\LanguageLocalization\obj\Release\LanguageLocalization.LocalResources.resources
+E:\C#\HerbalAnalysis\LanguageLocalization\obj\Release\LanguageLocalization.csproj.GenerateResource.Cache
+E:\C#\HerbalAnalysis\LanguageLocalization\obj\Release\LanguageLocalization.dll
+E:\C#\HerbalAnalysis\LanguageLocalization\obj\Release\LanguageLocalization.pdb
